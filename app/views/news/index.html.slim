@@ -1,0 +1,4 @@
+- content_for :title do; 'News' end
+= render @news_articles
+
+= will_paginate @news_articles, inner_window: 1, outer_window: 1

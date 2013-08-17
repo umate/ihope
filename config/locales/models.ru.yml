@@ -1,0 +1,34 @@
+ru:
+  activerecord:
+    models:
+      user:
+        one: пользователь
+        other: Пользователи
+      page:
+        one: страница
+        other: Страницы
+      setting:
+        one: настройка
+        other: Настройки
+      news_article:
+        one: новость
+        other: Новости
+
+    attributes:
+      user:
+        sign_in_count: Кол-во входов с систему
+        last_sign_in_at: Дата последнего входа
+      page:
+        title: Заголовок
+        content: Содержимое
+        slug: Короткий код
+      setting:
+        name: Имя
+        content: Содержимое
+        internal: Для внутреннего пользования?
+      news_article:
+        title: Название
+        short_description: Краткая аннотация
+        descr: Описание
+        image: Изображение
+        created_at: Дата

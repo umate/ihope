@@ -1,0 +1,16 @@
+base: &base
+  sql_range_step: 10000000
+  min_prefix_len: 2
+  version: 0.9.9
+
+development:
+  <<: *base
+  port: 9312
+
+test:
+  <<: *base
+  port: 9313
+
+production:
+  <<: *base
+  port: 9313

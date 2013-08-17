@@ -1,0 +1,7 @@
+%fieldset
+  %div.control-group.text_type
+    %label.control-label{for: "locales"} Выберите язык
+    %div.controls
+      = select_tag 'locale', options_for_select( [['Русский', :ru], ['Английский', :en], ['Немецкий', :de]],
+                                                  params[:locale] || :ru),
+                                                  { id: 'locales_changer', :include_blank => false }
