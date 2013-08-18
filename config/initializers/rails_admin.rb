@@ -7,7 +7,7 @@ RailsAdmin.config do |config|
 
   ################  Global configuration  ################
   #config.main_app_name = ['Application name', 'Панель управления']
-  config.main_app_name = Proc.new { |controller| [Rails.application.engine_name.titleize, 'Панель управления'] }
+  config.main_app_name = Proc.new { [Rails.application.config.app_name, 'Панель управления'] }
 
   config.compact_show_view = false
   config.current_user_method { current_user }
@@ -40,8 +40,8 @@ RailsAdmin.config do |config|
 
   ################ Models #################
   config.model User do
-    navigation_icon 'icon-user'
     navigation_label CMS_LABEL
+    navigation_icon 'icon-user'
 
     field :id
     field :email
@@ -51,6 +51,7 @@ RailsAdmin.config do |config|
   end
 
   config.model Page do
+    navigation_label CMS_LABEL
     navigation_icon 'icon-file'
 
     field :title
@@ -70,19 +71,21 @@ RailsAdmin.config do |config|
   end
 
   config.model Setting do
+    navigation_label CMS_LABEL
     navigation_icon 'icon-tags'
 
     field :name do
       help 'Разрешены только цифры латинского алфавита и подчеркивания'
     end
 
+    field :formatted
     field :content do
       ckeditor true
     end
-    field :internal
   end
 
   config.model NewsArticle do
+    navigation_label CMS_LABEL
     navigation_icon 'icon-bullhorn'
 
     field :title
@@ -93,14 +96,11 @@ RailsAdmin.config do |config|
       field :content do
         ckeditor true
       end
-
-      field :image, :carrierwave
     end
 
 
     show do
       field :content
-      field :image, :carrierwave
     end
   end
 

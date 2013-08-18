@@ -7,7 +7,6 @@ gem 'pg'
 gem 'rails_admin', '~>0.4.8'
 gem 'slim'
 
-gem 'bootstrap-wysihtml5-rails'
 gem 'ckeditor', '~>4.0.4'
 gem 'friendly_id'
 gem 'translit'

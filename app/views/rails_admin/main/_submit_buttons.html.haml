@@ -2,10 +2,7 @@
 .form-actions
   %button.btn.btn-primary{:type => "submit", :name => "_save", :'data-disable-with' => t("admin.form.save")}
     %i.icon-white.icon-ok
-    - if submit_text
-      = submit_text
-    - else
-      = t("admin.form.save")
+    = t("admin.form.save")
   %span.extra_buttons
     %button.btn{:type => "submit", :name => "_continue", :'data-disable-with' => t("admin.form.cancel")}
       %i.icon-remove

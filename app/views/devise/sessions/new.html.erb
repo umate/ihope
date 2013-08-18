@@ -1,5 +1,5 @@
 <%= form_for(resource, :as => resource_name, :url => session_path(resource_name), html: { class: 'form-signin'} ) do |f| %>
-  <h2 class="form-signin-heading">Вход</h2>
+  <h4 class="form-signin-heading">Вход в панель управления</h4>
 
   <%= f.email_field :email, :autofocus => true, class: 'input-block-level', placeholder: 'Email адрес' %>
 
@@ -7,9 +7,9 @@
 
   <% if devise_mapping.rememberable? -%>
     <label class="checkbox">
-      <%= f.check_box :remember_me %> <%= f.label 'Запомнить меня' %>
+      <%= f.check_box :remember_me, class: 'remember-me' %> <%= f.label 'Запомнить меня' %>
     </label>
   <% end -%>
 
-  <%= f.button "Войти", type: 'submit', class: 'btn btn-large btn-primary' %>
+  <%= f.button "Войти", type: 'submit', class: 'btn btn-primary' %>
 <% end %>

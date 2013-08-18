@@ -13,7 +13,7 @@ class NewsArticle < ActiveRecord::Base
               length: { maximum: 50000 }
   end
 
-  attr_accessible :title, :content, :short_description, :image, :image_cache, :remove_image
+  attr_accessible :title, :content, :short_description
 
   validates :title, presence: true,
             length: { maximum: 255 }

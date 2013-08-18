@@ -16,7 +16,8 @@ ru:
 
     attributes:
       user:
-        sign_in_count: Кол-во входов с систему
+        password: Пароль
+        sign_in_count: Входов с систему
         last_sign_in_at: Дата последнего входа
       page:
         title: Заголовок
@@ -26,9 +27,10 @@ ru:
         name: Имя
         content: Содержимое
         internal: Для внутреннего пользования?
+        formatted: Форматировать?
       news_article:
         title: Название
-        short_description: Краткая аннотация
+        short_description: Аннотация
         descr: Описание
         image: Изображение
         created_at: Дата

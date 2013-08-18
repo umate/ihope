@@ -12,6 +12,8 @@ end
 module IHope
   class Application < Rails::Application
 
+    config.app_name = 'IHope'
+
     config.generators do |g|
       g.test_framework  false
       g.view_specs      false

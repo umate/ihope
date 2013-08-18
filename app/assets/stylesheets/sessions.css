@@ -22,9 +22,22 @@ body {
   margin-bottom: 10px;
 }
 .form-signin input[type="text"],
+.form-signin input[type="email"],
 .form-signin input[type="password"] {
-  font-size: 16px;
-  height: auto;
+  font-size: 18px;
+  height: 50px;
   margin-bottom: 15px;
   padding: 7px 9px;
+}
+
+.form-signin button {
+  margin: 12px 0 0;
+}
+
+.form-signin .remember-me {
+  margin: 5px 8px 0 0;
+}
+
+.center {
+  text-align: center;
 }

@@ -6713,6 +6713,11 @@ body.rails_admin .navbar .brand small {
 body.rails_admin .sidebar-nav {
   margin-top: 20px;
 }
+body.rails_admin .sidebar-nav i {
+  display: block;
+  float: left;
+  width: 14px;
+}
 
 .wysihtml5-toolbar .btn {
   padding: 4px 10px;
